@@ -190,8 +190,6 @@ function acp#onPopupPost()
   " to clear <C-r>= expression on command-line
   echo ''
   if pumvisible()
-    inoremap <silent> <expr> <C-h> acp#onBs()
-    inoremap <silent> <expr> <BS>  acp#onBs()
     " a command to restore to original text and select the first match
     " XXX: see https://bitbucket.org/ns9tks/vim-autocomplpop/issue/53/
     " I am disable this in my fork for now to work better with supertab
